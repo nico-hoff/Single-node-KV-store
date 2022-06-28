@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "build",
+      "setup": "",
+      "run": "timeout -s9 10m ./build.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test single thread",
+      "setup": "",
+      "run": "timeout -s9 10m python3 tests/test_single.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test multithreaded",
+      "setup": "",
+      "run": "timeout -s9 10m python3 tests/test_multi.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Performance test",
+      "setup": "",
+      "run": "timeout -s9 10m python3 tests/test_perf.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
